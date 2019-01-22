@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="@drawable/basicbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:id="@+id/main_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/main_img_alarm"
+                    android:src="@drawable/alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="23dp"
+                    android:id="@+id/notice_new"
+                    android:src="@drawable/newicon"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:fontFamily="@font/nanum_bold"
+                    android:text="글적"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/main_img_setting"
+                    android:src="@drawable/setting"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+<LinearLayout
+    android:layout_below="@+id/main_titlebar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/main_layout_write"
+        android:background="@drawable/writeoff"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="17sp"
+            android:shadowColor="#30000000"
+            android:shadowRadius="5.0"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:textColor="#ffffff"
+            android:text="글 작성"
+            android:fontFamily="@font/nanum_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout_feel"
+        android:background="@drawable/feeloff"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:shadowColor="#30000000"
+            android:shadowRadius="5.0"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:layout_centerInParent="true"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:text="감상하기"
+            android:fontFamily="@font/nanum_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout_mypage"
+        android:background="@drawable/mypageoff"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:shadowColor="#30000000"
+            android:shadowRadius="5.0"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:layout_centerInParent="true"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:text="나의 글"
+            android:fontFamily="@font/nanum_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout_book"
+        android:background="@drawable/bookoff"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:shadowColor="#30000000"
+            android:shadowRadius="5.0"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:layout_centerInParent="true"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:text="글적 서적"
+            android:fontFamily="@font/nanum_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
+    </RelativeLayout>
+</layout>

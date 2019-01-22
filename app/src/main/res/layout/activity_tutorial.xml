@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:background="@drawable/basicbg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:layout_centerInParent="true"
+        android:id="@+id/tutorial_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+
+<LinearLayout
+    android:layout_marginBottom="30dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <com.pm10.library.CircleIndicator
+       android:id="@+id/indicator"
+       app:p_gap="5dp"
+       app:p_radius="4dp"
+       app:p_strokeWidth="0.1dp"
+       app:p_defaultColor="#99ffffff"
+       app:p_selectedColor="@color/maincolor"
+       app:p_strokeColor="@color/maincolor"
+       android:layout_width="wrap_content"
+       android:layout_height="30dp" />
+</LinearLayout>
+</RelativeLayout>
+</layout>

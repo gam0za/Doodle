@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/item_today_layout_date"
+            android:layout_marginBottom="10dp"
+            android:background="@color/maincolor"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <ImageView
+                android:src="@drawable/frame_date"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/item_today_text_date"
+                android:layout_centerInParent="true"
+                android:text="2018년 12월 25일, 화요일"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/nanum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/item_today_img_image"
+            android:src="@drawable/writingbg"
+            android:layout_below="@+id/item_today_layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/item_today_img_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_today_text_like"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/nanum"
+                    android:text="공감"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_today_text_likecount"
+                    android:fontFamily="@font/nanum"
+                    android:text="2.4천"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_today_text_comment"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/nanum"
+                    android:text="댓글"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_today_text_commentcount"
+                    android:fontFamily="@font/nanum"
+                    android:text="320"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_today_text_scrap"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/nanum"
+                    android:text="담아감"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_today_text_scrapcount"
+                    android:fontFamily="@font/nanum"
+                    android:text="2.4천"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/item_feel_today_text_writer"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/nanum_bold"
+                android:textColor="@color/maincolor"
+                android:text="간지감자"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

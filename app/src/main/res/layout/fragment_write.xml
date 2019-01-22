@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_write"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.tutorial.WriteFragment">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/maincolor"
+            android:fontFamily="@font/nanum_bold"
+            android:text="글작성"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:src="@drawable/tutoimage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+        android:layout_marginTop="50dp"
+        android:background="#60000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+        <View
+            android:layout_marginTop="3dp"
+            android:background="#60000000"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"/>
+
+        <TextView
+            android:text="글적에서 제공하는 오늘의 배경이나"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanum_bold"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="사진첩 속 사진 위에 글적이세요."
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nanum_bold"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="10dp"
+            android:background="#60000000"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"/>
+        <View
+            android:layout_marginTop="3dp"
+            android:background="#60000000"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

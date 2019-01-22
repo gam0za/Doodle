@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:background="@drawable/myfeedbg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/myfeed_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nanum_bold"
+                android:text="나의 글"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:background="#60000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+    <View
+        android:layout_marginTop="2dp"
+        android:background="#60000000"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+    <LinearLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:gravity="center"
+                android:background="@drawable/frame"
+                android:layout_width="88dp"
+                android:layout_height="88dp">
+                <RelativeLayout
+                    android:background="@drawable/frame"
+                    android:layout_width="83dp"
+                    android:layout_height="83dp">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/myfeed_img_profile"
+                        android:src="@drawable/profile"
+                        android:layout_width="83dp"
+                        android:layout_height="83dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/myfeed_text_nickname"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="@font/nanum_bold"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="13sp"
+                    android:text="감성"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nanum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/myfeed_text_writecount"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="13sp"
+                        android:text="97"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nanum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="13sp"
+                        android:text="담아감"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nanum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/myfeed_text_scrapcount"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="13sp"
+                        android:text="130"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nanum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/myfeed_text_goprofile"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp"
+                            android:text="프로필 수정"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/nanum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/myfeed_text_info"
+                android:layout_marginLeft="3dp"
+                android:text=""
+                android:textSize="13sp"
+                android:fontFamily="@font/nanum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="33dp">
+        <RelativeLayout
+            android:id="@+id/myfeed_layout_myfeed_title"
+            android:gravity="center"
+            android:background="@color/maincolor"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/myfeed_img_myfeed_title"
+                android:background="@drawable/frame_white"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/myfeed_text_myfeed_title"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nanum_bold"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="나의 글"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/myfeed_layout_scrap_title"
+            android:background="@color/subcolor"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/myfeed_img_scrap_title"
+                android:visibility="gone"
+                android:background="@drawable/frame_white"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/myfeed_text_scrap_title"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nanum_bold"
+                android:textColor="@color/subtext"
+                android:textSize="15sp"
+                android:text="담은 글"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@drawable/myfeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/myfeed_layout_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/myfeed_Img_logo"
+                android:layout_centerInParent="true"
+                android:src="@drawable/colorlogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nanum"
+                android:text="당신의 첫번째 끄적임을 기다리고있어요"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/myfeed_Img_logo"
+                android:textColor="@color/maincolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myfeed_recyclerview"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>
+</layout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/item_singleline_layout_top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/item_singleline_text_date"
+                android:fontFamily="@font/nanum_bold"
+                android:text="2018년 12월 30일"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_singleline_text_nickname"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/nanum_bold"
+                    android:text="보들보들"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/item_singleline_layout_top"
+            android:id="@+id/item_singleline_img_image"
+            android:src="@drawable/writingbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/item_singleline_img_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_singleline_text_like"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/nanum"
+                    android:text="공감"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_singleline_text_likecount"
+                    android:fontFamily="@font/nanum"
+                    android:text="2.4천"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_singleline_text_comment"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/nanum"
+                    android:text="댓글"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_singleline_text_commentcount"
+                    android:fontFamily="@font/nanum"
+                    android:text="320"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_singleline_text_scrap"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/nanum"
+                    android:text="담아감"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/item_singleline_text_scrapcount"
+                    android:fontFamily="@font/nanum"
+                    android:text="2.4천"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:src="@drawable/more"
+                android:id="@+id/item_singleline_img_more"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/item_singleline_layer_moremenu"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/item_singleline_text_restore"
+                        android:fontFamily="@font/nanum_bold"
+                        android:textColor="#000000"
+                        android:padding="5dp"
+                        android:text="저장"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/item_singleline_text_delete"
+                        android:fontFamily="@font/nanum_bold"
+                        android:textColor="#000000"
+                        android:padding="5dp"
+                        android:text="삭제"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
