@@ -38,7 +38,7 @@ public class OtherActivity extends AppCompatActivity {
     OtherAdapter adapter;
     RequestManager requestManager;
     int user_idx;
-//
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
